@@ -4,7 +4,7 @@ Visit the releases page for downloads: https://github.com/paigeadelethompson/com
 ## Version
 The source code tag is specified as an environment variable in the repository configuration. For a complete list of tags: https://github.com/torvalds/linux/tags
 
-# Testing
+# Testing kernel
 
 ```
 mkdir -p work/rd ; cd work/rd
