@@ -16,12 +16,12 @@ jobs:
           - name: Run the build process with Docker
             uses: addnab/docker-run-action@v3
             with:
-                image: debian:testing
+                image: debian:stable
                 options: -v ${{ github.workspace }}:/root -v /output:/output
                 run: |
                     cd /root
                     #pwd
-                    bash kernel.sh
+                    bash derle.sh
                    # mv *.iso /output/etahta.iso
           - uses: "marvinpinto/action-automatic-releases@latest"
             with:
