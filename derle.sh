@@ -21,7 +21,7 @@ apt-get install git dwarves linux-image-generic libelf-dev build-essential ccach
 lld wget coreutils libncurses-dev bison flex libssl-dev unzip xz-utils -y 
 apt-get install  ncurses-dev bzip2  procps libncurses5-dev gcc make git exuberant-ctags bc libssl-dev -y
 
-kernel-package module-init-tools initrd-tools
+# kernel-package module-init-tools initrd-tools
 ### kernel tarball indirildi ve açıldı
 wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.10.tar.xz
 tar -xvf linux-6.6.10.tar.xz
