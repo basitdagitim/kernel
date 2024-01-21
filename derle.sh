@@ -1,4 +1,7 @@
+#!/bin/bash
+set -ex
 ### gerekli paketler kuruldu
+
 apt update
 apt install rsync -y
 rsync -V
