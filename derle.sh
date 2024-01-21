@@ -1,9 +1,16 @@
 ### gerekli paketler kuruldu
 apt update
+apt install rsync -y
+rsync -V
+whereis rsync
+
+
+exit
+
 apt-get install git dwarves linux-image-generic libelf-dev build-essential ccache debhelper clang \
 lld wget coreutils libncurses-dev bison flex libssl-dev unzip xz-utils -y 
 apt-get install kernel-package ncurses-dev bzip2 module-init-tools initrd-tools procps \
-libncurses5-dev gcc make git exuberant-ctags bc libssl-dev rsync rsync-dev -y
+libncurses5-dev gcc make git exuberant-ctags bc libssl-dev -y
 
 ### kernel tarball indirildi ve açıldı
 wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.10.tar.xz
