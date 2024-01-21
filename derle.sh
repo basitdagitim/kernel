@@ -1,5 +1,15 @@
 #!/bin/bash
 set -ex
+#### Remove all environmental variable
+for e in $(env | sed "s/=.*//g") ; do
+    unset "$e" &>/dev/null
+done
+#### Set environmental variables
+export PATH=/bin:/usr/bin:/sbin:/usr/sbin
+export LANG=C
+export SHELL=/bin/bash
+export TERM=linux
+export DEBIAN_FRONTEND=noninteractive
 ### gerekli paketler kuruldu
 
 apt update
